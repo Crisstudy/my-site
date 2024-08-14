@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+BR:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Teko:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Playball&family=Teko:wght@300..700&display=swap');
+
+:root {
+    --cor0:#f1e2eb;
+    --cor1: #DDC6F5;
+    --cor2: #B325F5;
+    --cor3: #670565f0;
+    --cor4: #620d5b;
+    --cor5: #580404;
+
+    --font-padrao: Verdana, 'Geneva', Tahoma, sans-serif;
+    --fonte-destaque:  "Playball", 'cursiva';
+    --fonte-alternativa: "Teko", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: black url("imagens/pexels-albinawhite-12246242.jpg") center center no-repeat fixed;
+    background-size: cover;
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    min-height: 150px;
+    text-align: center;
+    border: solid;
+    border-color: var(--cor5);
+}
+
+header > h1 {
+    font-size: 60px;
+    font-family: var(--font-padrao);
+    color: var(--cor5);
+    padding: 10px;
+    margin: auto;
+}
+
+header > p {
+    text-align: center;
+    font-size: 35px;
+    font-family: var(--fonte-destaque);
+    color: var(--cor1);
+    padding: 5px;
+    margin: 10px;
+}
+
+nav {
+    text-align: center;
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 365);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: var(--cor2);
+    color: var(--cor4);
+}
+
+
+
+main {
+    background-color: var(--cor2);
+    margin: 10px;
+    padding: 10px;
+    
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(78, 9, 9, 0.56);
+
+ 
+}
+
+main picture > img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(78, 9, 9, 0.56);
+    display: block;
+    margin: 10px 10px 10px -1px;
+}
+
+main h2 {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.58);
+    font-family: var(--fonte-destaque);
+    font-size: 30px;
+    color:  var(--cor0);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+   
+    padding: 10px;
+    margin: 10px;
+    border: solid;
+    border-color: var(--cor5);
+}
+
+main h3 {
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 30px;
+    color: var(--cor5);
+}
+
+.imagem-congresso {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.imagem-congresso:hover {
+    opacity: 0.8;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 50px;
+    font-family: var(--font-padrao);
+    font-size: 20px;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    margin: 20px 10px;
+    padding: 10px;
+    line-height: 1.5em;
+    border-radius: 10px;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 50px 10px 30px 10px;
+    padding: 20px;
+    padding-bottom: 69%;
+    position: relative;
+    
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+strong { 
+    font-weight: bolder;
+}
+
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .bloco {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    
+}
+
+article > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor2);
+    padding: 2px 6px;
+}
+
+.meu-botao {
+    background-color: var(--cor5);
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.meu-botao:hover {
+    background-color: var(--cor4);
+}
+
+article a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+    background-color: var(--cor2);
+}
+
+article {
+    background-color: var(--cor4);
+    padding-top: 50px;
+    margin: auto;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px rgba(78, 9, 9, 0.56);
+    
+}
+
+article  h1 {
+    font-family: var(--fonte-alternativa);
+    font-size: 50px;
+    text-align: center;
+    color: var(--cor5);
+   
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+}
+
+article h2 {
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 30px;
+    color:  var(--cor5);
+    background-color: var(--cor1);
+   
+    padding: 5px;
+    margin: 20px 50px 20px 50px;
+    border: solid;
+}
+
+article .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+article .container > picture {
+    margin: 10px;
+    padding: 10px;
+    border: solid;
+    border-color: var(--cor5);
+    box-shadow: 0px 0px 10px rgba(78, 9, 9, 0.56);
+}
+
+article .container > img {
+    max-width: 100px;
+    margin-right: 20px;  
+}
+
+article .container .text {
+    flex: 1;
+}
+
+.text > p {
+    text-align: justify;
+    text-indent: 30px;
+    font-family: var(--font-padrao);
+    font-size: 20px;
+    color: var(--cor5);
+    margin: 10px;
+    padding: 10px;
+}
+
+
+#noticias {
+    background-color: var(--cor3);
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 10px rgba(78, 9, 9, 0.56);
+}
+
+.text > h4 {
+    font-family: var(--fonte-alternativa);
+    font-size: larger;
+}
+
+div.noticia > p {
+    text-align: justify;
+    text-indent: 30px;
+    font-family: var(--font-padrao);
+    font-size: 20px;
+}
+
+footer {
+    background-color: var(--cor1);
+    color: black;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+
+
