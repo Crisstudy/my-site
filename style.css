@@ -75,7 +75,27 @@ nav a:hover {
     color: var(--cor4);
 }
 
+.texto-biblico {
+    text-align: center;
+    color: var(--cor0);
+    padding-top: 10px;
+}
 
+div.texto-biblico > p {
+    display: none;
+    font-family: var(--fonte-destaque);
+    font-size: 30px;
+    margin: auto;
+    padding: 10px;
+    text-shadow: var(--cor5);
+}
+
+div.texto-biblico:hover > p {
+    display: block;
+    text-align: center;
+    color: var(--cor0);
+    width: 300px;
+}
 
 main {
     background-color: var(--cor2);
@@ -84,8 +104,6 @@ main {
     
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(78, 9, 9, 0.56);
-
- 
 }
 
 main picture > img {
@@ -117,18 +135,6 @@ main h3 {
     color: var(--cor5);
 }
 
-.imagem-congresso {
-    width: 100%;
-    height: auto;
-    border: 2px solid black;
-    border-radius: 8px;
-    margin: auto;
-}
-
-.imagem-congresso:hover {
-    opacity: 0.8;
-}
-
 main p {
     text-align: justify;
     text-indent: 50px;
@@ -157,6 +163,18 @@ div.video > iframe {
     left: 5%;
     width: 90%;
     height: 90%;
+}
+
+.imagem-congresso {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.imagem-congresso:hover {
+    opacity: 0.8;
 }
 
 strong { 
@@ -193,13 +211,13 @@ article > a {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin-left: 180px;
     cursor: pointer;
     border-radius: 12px;
 }
 
 .meu-botao:hover {
-    background-color: var(--cor4);
+    background-color: var(--cor4); 
 }
 
 article a:hover {
@@ -256,11 +274,6 @@ article .container > picture {
     box-shadow: 0px 0px 10px rgba(78, 9, 9, 0.56);
 }
 
-article .container > img {
-    max-width: 100px;
-    margin-right: 20px;  
-}
-
 article .container .text {
     flex: 1;
 }
@@ -303,8 +316,13 @@ footer {
     padding: 5px;
 }
 
-footer > p > a {
-    color: white;
+footer > p {
+    font-family: var(--font-padrao);
+    font-size: larger; 
+}
+
+footer > a {
+    color: var(--cor4);
     font-weight: bolder;
     text-decoration: none;
 }
