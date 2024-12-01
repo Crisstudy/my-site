@@ -37,6 +37,12 @@ header{
     text-align: center;
     border: solid;
     border-color: var(--cor5);
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 header > h1 {
@@ -45,6 +51,8 @@ header > h1 {
     color: var(--cor5);
     padding: 10px;
     margin: auto;
+
+    flex: 0 0 200px;
 }
 
 header > p {
@@ -194,6 +202,17 @@ main .bloco {
     
 }
 
+article {
+    background-color: var(--cor4);
+    padding-top: 50px;
+    margin: auto;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px rgba(78, 9, 9, 0.56);
+    flex-flow: row nowrap;
+    
+}
+
 article > a {
     text-decoration: none;
     font-weight: bold;
@@ -224,16 +243,6 @@ article a:hover {
     text-decoration: underline;
     color: var(--cor4);
     background-color: var(--cor2);
-}
-
-article {
-    background-color: var(--cor4);
-    padding-top: 50px;
-    margin: auto;
-    border-radius: 10px;
-
-    box-shadow: 0px 0px 10px rgba(78, 9, 9, 0.56);
-    
 }
 
 article  h1 {
