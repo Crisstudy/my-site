@@ -41,6 +41,12 @@ header{
     display: block;
 }
 
+
+
+
+
+
+
 header > h1 {
     font-size: 60px;
     font-family: var(--font-padrao);
@@ -91,6 +97,32 @@ nav a:hover {
     transition: background-color .5s;
 }
 
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;  
+    gap: 20px;
+
+
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toglle {
+    cursor: pointer;
+    font-size: 24px;
+    display: block;
+}
+
 div.texto-biblico {
     text-align: center;
     color: var(--cor0);
@@ -127,7 +159,8 @@ main picture > img {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(78, 9, 9, 0.56);
     display: block;
-    margin: 10px 10px 10px -1px;
+    margin: 50px 10px 30px 10px;
+    position: relative;
 }
 
 main h2 {
@@ -169,6 +202,7 @@ div.video {
     margin: 50px 10px 30px 10px;
     padding: 20px;
     padding-bottom: 69%;
+    border-radius: 10px;
     position: relative;
     
 }
@@ -350,4 +384,17 @@ footer a:hover {
 }
 
 
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
 
+    .nav-links li {
+        display: block;
+    }
+}
+
+.show-menu .nav-links li {
+    display: block;
+    text-align: center;
+}
