@@ -42,11 +42,6 @@ header{
 }
 
 
-
-
-
-
-
 header > h1 {
     font-size: 60px;
     font-family: var(--font-padrao);
@@ -215,12 +210,14 @@ div.video > iframe {
     height: 90%;
 }
 
+
 .imagem-congresso {
     width: 100%;
     height: auto;
     border: 2px solid black;
     border-radius: 8px;
     margin: auto;
+
 }
 
 .imagem-congresso:hover {
@@ -229,6 +226,22 @@ div.video > iframe {
 
 strong { 
     font-weight: bolder;
+}
+
+
+.imagem-livro {
+    width: 25%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 10px;
+    padding: auto; 
+    
+    align-items: center;
+}
+
+.imagem-livro:hover {
+    opacity: 0.8;
 }
 
 main .container {
@@ -382,7 +395,6 @@ footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
 }
-
 
 @media (min-width: 768px) {
     .menu-toggle {
