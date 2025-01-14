@@ -96,20 +96,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-
-.nav-links {
-    list-style: none;
-    display: flex;  
-    gap: 20px;
-
-
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
 }
 
 .menu-toglle {
@@ -141,7 +128,7 @@ div.texto-biblico:hover > p {
 }
 
 main {
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     margin: 10px;
     padding: 10px;
     
@@ -212,11 +199,11 @@ div.video > iframe {
 
 
 .imagem-congresso {
-    width: 100%;
+    width: 60%;
     height: auto;
     border: 2px solid black;
     border-radius: 8px;
-    margin: auto;
+    margin-left: 100px;
 
 }
 
@@ -230,13 +217,17 @@ strong {
 
 
 .imagem-livro {
-    width: 25%;
+    width: 80%;
     height: auto;
     border: 2px solid black;
     border-radius: 8px;
-    margin: 10px;
+    margin: auto;
     padding: auto; 
-    
+}
+
+.caixa-livro {
+    display: flex;
+    flex-wrap: nowrap;
     align-items: center;
 }
 
@@ -244,7 +235,7 @@ strong {
     opacity: 0.8;
 }
 
-main .container {
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -396,17 +387,33 @@ footer a:hover {
     color: var(--cor1);
 }
 
-@media (min-width: 768px) {
+/* Estilos para telas menores */
+@media (max-width: 768px) { 
+    .menu-toggle { 
+    display: block;
+} 
+
+nav { 
+    display: none; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
+    position: relative; 
+    top: 60px; 
+    left: 0;   
+} 
+nav a { 
+    margin: 10px 0px; 
+    width: 90%; 
+    text-align: center;
+} 
+nav.active { 
+    display: flex; 
+    } 
+}
+
+/*@media (min-width: 768px) {
     .menu-toggle {
         display: none;
     }
-
-    .nav-links li {
-        display: block;
-    }
-}
-
-.show-menu .nav-links li {
-    display: block;
-    text-align: center;
-}
+}*/

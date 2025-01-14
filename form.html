@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contate-nos</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+      }  
+
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      input, textarea, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+      }
+
+      .message {
+        margin-top: 20px;
+        padding: 15px;
+        border: 1px solid#4cAF50;
+        background-color: #eaffea;
+        color: #4cAF50;
+        border-radius: 5px;
+      }
+    </style>
+</head>
+<body>
+    <h1>Preencha o formulário</h1>
+    <form id="contactForm">
+        <label for="name">Seu nome</label>
+        <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+
+        <label for="email">Seu email</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+
+        <label for="message">Sua mensagem</label>
+        <textarea name="message" id="message" placeholder="Digite sua mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="responseMessage" class="message" style="display: none;"></div>
+
+    <script>
+        //seleciona o formuláro e a área de mensagem
+        const form = document.getElementById('contractForm');
+        const responseMessage = document.getElementById('responseMessage');
+        
+        //Adiciona o evento de envio ao formulário
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); //Evita o envio padrão do formulário
+
+            //Obtém os valores dos campos 
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            //Exibe a mensagem de resposta
+            responseMessage.style.display = 'block';
+            responseMessage.textContent = `Obrigado, ${name}! Recebemos sua mensagem: "${message}". Entraremos em contato pelo o email: ${email}.`
+
+            //Limpa o formulário
+            form.reset();
+        });
+    </script>
+</body>
+</html>
