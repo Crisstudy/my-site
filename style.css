@@ -61,11 +61,12 @@ header > p {
     flex: 0 0 auto;
 }
 
-nav {
+
+nav > menu {
     text-align: center;
     line-height: 10px;
     background-color: var(--cor4);
-    padding: 10px;
+    padding: auto;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 365);
 
     display: flex;
@@ -74,7 +75,11 @@ nav {
     align-items: center;
 }
 
-nav > a {
+span#burguer {
+    display: none;
+}
+
+nav > menu > a {
     color: white;
     padding: 10px;
     text-decoration: none;
@@ -86,23 +91,17 @@ nav > a {
     flex: 0 0 auto;
 }
 
-nav a:hover {
+nav > menu a:hover {
     background-color: var(--cor2);
     color: var(--cor4);
     transition: background-color .5s;
 }
 
-.navbar {
+.navbar  menu {
     display: flex;
     justify-content: center;
     align-items: center;
 
-}
-
-.menu-toglle {
-    cursor: pointer;
-    font-size: 24px;
-    display: block;
 }
 
 div.texto-biblico {
@@ -199,12 +198,10 @@ div.video > iframe {
 
 
 .imagem-congresso {
-    width: 60%;
+    width: 100%;
     height: auto;
     border: 2px solid black;
     border-radius: 8px;
-    margin-left: 100px;
-
 }
 
 .imagem-congresso:hover {
@@ -268,6 +265,7 @@ article > a {
 }
 
 .meu-botao {
+    width: 100%;
     background-color: var(--cor5);
     border: none;
     color: white;
@@ -276,7 +274,7 @@ article > a {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-left: 180px;
+    margin: 10px;
     cursor: pointer;
     border-radius: 12px;
 }
@@ -388,32 +386,49 @@ footer a:hover {
 }
 
 /* Estilos para telas menores */
-@media (max-width: 768px) { 
-    .menu-toggle { 
-    display: block;
-} 
-
-nav { 
-    display: none; 
-    flex-direction: column; 
-    align-items: center; 
-    width: 100%; 
-    position: relative; 
-    top: 60px; 
-    left: 0;   
-} 
-nav a { 
-    margin: 10px 0px; 
-    width: 90%; 
-    text-align: center;
-} 
-nav.active { 
-    display: flex; 
-    } 
-}
-
-/*@media (min-width: 768px) {
-    .menu-toggle {
-        display: none;
+@media (max-width: 768px) {
+    span#burguer {
+        color: #DDC6F5;
+        display: block;
+        text-align: center;
+        padding: auto;
+        cursor: pointer;
     }
-}*/
+    
+    span#burguer:hover {
+        background-color: #DDC6F5;
+        color: #620d5b;
+        border-radius: 10px;
+    }
+
+    nav menu { 
+        display: none; 
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+        height: 100%; 
+        position: relative; 
+        top: 0px; 
+
+    } 
+    nav menu a { 
+        margin: 10px; 
+        width: 100%vw; 
+        height: 100%vh;
+        text-align: center;
+
+        display: none;
+    } 
+
+    nav > menu a:hover {
+        background-color: var(--cor2);
+        color: var(--cor4);
+        transition: background-color .5s;
+    /*nav.active { 
+        display: flex; 
+        } */
+
+}
+@media (min-width: 768px) {
+
+}
