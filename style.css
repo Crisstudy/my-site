@@ -361,6 +361,53 @@ div.noticia > p {
     font-size: 20px;
 }
 
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-left: 2px solid #ddd;
+  }
+
+aside h2 {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.58);
+    font-family: var(--fonte-destaque);
+    font-size: 30px;
+}
+
+aside p {
+    text-align: justify;
+    text-indent: 50px;
+    font-family: var(--font-padrao);
+    font-size: 20px;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    margin: 20px 10px;
+    padding: 10px;
+    
+}
+
+aside a {
+    color: #580404;
+    text-decoration: none;
+  }
+
+aside a:hover {
+    text-decoration: none;
+  }
+
+aside img {
+    border: 1px solid #580404;
+    border-radius: 5px;
+}
+
+.bloco-blog {
+    display: flex;
+      flex-direction: row;
+}
+
 footer {
     background-color: var(--cor1);
     color: black;
@@ -424,11 +471,10 @@ footer a:hover {
         background-color: var(--cor2);
         color: var(--cor4);
         transition: background-color .5s;
-    /*nav.active { 
-        display: flex; 
-        } */
+    }
 
-}
-@media (min-width: 768px) {
+    nav.active { 
+        display: flex; 
+        } 
 
 }
