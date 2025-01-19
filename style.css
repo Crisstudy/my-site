@@ -405,7 +405,7 @@ aside img {
 
 .bloco-blog {
     display: flex;
-      flex-direction: row;
+    flex-direction: column;
 }
 
 footer {

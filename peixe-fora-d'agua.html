@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    <style>
+        body {
+            background-color: rgb(186, 186, 240);
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        header h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 40px;
+            text-align: center;
+            background-color: rgb(30, 30, 96);
+            color: white;
+        }
+
+        nav menu {
+            text-align: center;
+            line-height: 10px;
+            background-color: white;
+            padding: auto;
+            box-shadow: 0px 7px 7px rgba(0, 0, 0, 365);
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        span#burguer {
+            display: none;
+        }
+
+        nav > menu > a {
+            color: rgb(30, 30, 96);
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            flex: 0 0 auto;
+        }
+
+        nav menu a:hover {
+            background-color: rgb(186, 186, 240);
+            color: white;
+            transition: background-color .5s;
+        }
+
+        .navbar menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(78, 9, 9, 0.56);
+            display: block;
+            margin: 10px;
+            position: relative;
+        }
+
+        p {
+            color: rgb(30, 30, 96);
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .bloco {
+            flex: 1;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: rgb(30, 30, 96);
+            color: white;
+            text-align: center;
+            font-size: 0.9em;
+            padding: 5px;
+        }
+
+        footer p {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        footer a {
+            color: rgba(214, 214, 3, 0.892);
+            font-weight: bolder;
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+        /* Estilos para telas menores */
+@media (max-width: 768px) {
+    span#burguer {
+        color: #DDC6F5;
+        display: block;
+        text-align: center;
+        padding: auto;
+        cursor: pointer;
+    }
+    
+    span#burguer:hover {
+        background-color: #DDC6F5;
+        color: #620d5b;
+        border-radius: 10px;
+    }
+
+    nav menu { 
+        display: none; 
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+        height: 100%; 
+        position: relative; 
+        top: 0px; 
+
+    } 
+    nav menu a { 
+        margin: 10px; 
+        width: 100%vw; 
+        height: 100%vh;
+        text-align: center;
+
+        display: none;
+    } 
+
+    nav > menu a:hover {
+        background-color: var(--cor2);
+        color: var(--cor4);
+        transition: background-color .5s;
+    }
+}
+    </style>
+</head>
+<body>
+    <article id="peixe-fora-d'agua">
+        <header>
+            <h1>O peixe fora d'água e o sucesso na vida</h1>
+                <nav class="navbar">
+                    <div>
+                        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+                        menu
+                        </span>
+                    </div>
+                            <menu>
+                                <a href="inicio.html">ÍNICIO</a>
+                                <a href="inicio.html">BLOG</a>
+                                <a href="inicio.html">EVENTOS&MATERIAL</a>
+                                <a href="form.html">CONTATO</a>
+                            </menu>
+                </nav>
+        </header>
+            <div class="container">
+                <div class="bloco">
+                    <picture>
+                        <img src="imagens/peixe.jpg" alt="peixe-blog">
+                    </picture>
+                    <h2>Dentro ou fora?</h2>
+                    <p>Você pode estar se perguntando o que tem haver o peixe com o nosso sucesso, bom para o pescador “tudo”, mas não é estória de pescador que vamos abordar e sim uma reflexão e comparação sobre o verdadeiro motivo em que a vida se torna tão difícil para alguns.,</p><p>Uma noite destas eu estava deitada e meditando sobre o<Strong> “sucesso na vida”</Strong> e porque tantas pessoas não conseguem viver plenamente, e acabando se conformando com uma vida medíocre e sem perspectiva, enquanto pensava tudo isso lembrei-me de uma história que ouvi em uma conferência com o Dr. Mike Murdock em uma de suas visitas ao Brasil, através de uma experiência pessoal compartilhada por ele, ficou tão claro como algumas respostas estão tão visíveis se olharmos melhor as coisas que acontecem ao nosso redor.</p><p>Ele contava sobre quando mandou fazer um lago artificial em uma de suas propriedades nos Estados Unidos e decidiu criar peixes naquele local, enquanto uma equipe contratada realizava o trabalho de colocar os peixes adquiridos devidamente no lago, Dr. Mike observava curiosamente que espalhados na grama as margens da água os peixes  agonizavam e se debatiam num esforço muito grande para sobreviver, mas assim que eram colocados dentro da água eles saiam bem-sucedida mente nadando de forma perfeita e plena como se não tivessem nenhum obstáculo que pudesse impedi-los naquele lugar; isso levou-o a reflexão e seguinte conclusão, de que o sucesso daqueles peixes só era possível por que ao ser colocado dentro da água, encontraram o seu habitat natural, aquele era o ambiente propício para que fossem bem sucedidos no seu meio;</p>
+                </div>
+                <div class="bloco">
+                      <p>Você já parou para pensar quantos de nós passamos a vida nos debatendo e agonizando para conseguir sobreviver diante de tantos obstáculos e desafios? nos sentimos infelizes e frustrados como aqueles peixes da história acima, as vezes pensamos que não temos valor ou capacidade suficiente para se sobressair na vida nos tornando seres de baixa estima e comiseráveis, ouvimos tantas histórias de superação e restauração, mas não compreendemos como funciona de verdade essas tais coisas; mas o objetivo deste artigo é leva-lo a reflexão que possivelmente a maioria de nós temos todos os ingredientes e valores necessários para ter sucesso na vida e que se ainda estamos agonizando na tentativa de sobrevivência seja apenas porque somos um,<Strong> “peixe fora d'agua”, </Strong>estamos sempre em busca de alguma coisa em algum lugar e geralmente buscamos nos lugares errados, ou nos esforçamos em se colocar em ambientes que desfavorecem nosso desenvolvimento pessoal, se você já se sentiu assim, certamente entende muito bem do que estou falando e só precisa encontrar o habitat certo para apresentar e  colocar em prática todo nosso potencial.</p> <p>Na vida cada um de nós tem um propósito, e esse propósito está correlacionado com a contribuição que temos que deixar e dar a nossa família e sociedade em geral, mas só conseguiremos realmente realizar com sucesso nossa missão de vida, se tivermos na desenvoltura de nossas capacidades. Encontre o seu lugar, aquilo que te estimula a ser melhor, onde a sua mente enxerga claramente as coisas mesmo no escuro, pare de tentar ser como o outro é, pare de se colocar onde você acha que as pessoas querem que você esteja, pense que, sua contribuição em uma causa ou na sua própria vida pode ser muito maior quando estiver onde nasceu para estar. Você tem valor sim! Você tem capacidade sim! O sucesso é para você, apenas encontre o seu lugar!</p>
+                </div>
+                <aside>
+                    <section id="blog">
+                        <h2>Todos os posts</h2>
+                        <p>Confira os últimos posts no meu blog:</p>
+                                <div class="blog">
+                                    <ul>
+                                        <li><a href=""><h3>Dicas de beleza do Youtube nunca mais!</h3><img src="imagens/cabelo.jpg" alt="cabelo-blog"></a></li>
+                                    </ul>
+                                </div>
+                        </section>        
+                </aside>
+            </div>
+            <footer>
+                <p>Por Cristina Saraiva Figueirêdo;<br>Pastora da Igreja de Cristo (MANT-ANAPÓLIS)</br></p>
+            <p>telefone: (62)3319-6864 (62)98253-0259</p>
+            <a href="mailto:kristinae12@hotmail.com?subject=Preciso de ajuda&cc=copia@outlook.com.br&bcc=copiaoculta@provedor.com.br&body=Conteúdo do email que será preenchido automaticamente">Enviar email</a>
+            <a href="https://www.facebook.com/universmulher/" target="_blank">facebook</a>
+            <a href="https://www.instagram.com/univers_mulher/" target="_blank">instagram</a>
+            <a href="https://www.youtube.com/channel/UCtS4eGKzvLqKWi6JOMgMaRg" target="_blank">youtube</a>
+            </footer>
+    </article>
+    <script>
+
+    </script>
+</body>
+</html>
