@@ -362,15 +362,19 @@ div.noticia > p {
 }
 
 aside {
-    flex: 1;
+    max-width: 100%;
+    min-height: 500px;
+    text-align: center;
     background-color: #f4f4f4;
     padding: 20px;
-    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    border-radius: 10px;
   }
 
+
 aside h2 {
-    padding: 10px;
     margin: 10px;
+    padding: 10px;
     text-align: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.58);
     font-family: var(--fonte-destaque);
@@ -378,7 +382,7 @@ aside h2 {
 }
 
 aside p {
-    text-align: justify;
+    text-align: center;
     text-indent: 50px;
     font-family: var(--font-padrao);
     font-size: 20px;
@@ -389,13 +393,31 @@ aside p {
     
 }
 
+.bloco-blog {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 aside a {
+    display: block;
+    background-color: #DDC6F5;
     color: #580404;
     text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    cursor: grab;
   }
 
 aside a:hover {
     text-decoration: none;
+  }
+
+  aside a:active {
+    cursor: grabbing;
   }
 
 aside img {
@@ -403,16 +425,13 @@ aside img {
     border-radius: 5px;
 }
 
-.bloco-blog {
-    display: flex;
-    flex-direction: column;
-}
 
 footer {
     background-color: var(--cor1);
     color: black;
     text-align: center;
     font-size: 0.8em;
+    margin-top: 10px;
     padding: 5px;
 }
 
